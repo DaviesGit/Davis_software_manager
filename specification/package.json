@@ -1,0 +1,23 @@
+[
+	{
+		"id": "5d41402abc4b2a76b9719d911017c592",
+		"name": "software 1",
+		"type": "software", // software, library, framework, source, document, 
+		"base_path": "s:/software_binary",
+		"software_folder_name": "software",
+		"relative_file_path": "./software/software.exe", //use relative path
+		"file_name": "software",
+		"file_extension": "exe",
+		"icon": "", /* if "" is using default software.ico in software.exe folder*/
+		"tag": [
+			"tag1",
+			"tag2"
+		],
+		"description": "this is the software description",
+		"start_parameters": [],
+		"start_folder": "",
+		"auto_start": false,
+		"before_run": [],
+		"other_attribute": "other_attribute"
+	}
+]

@@ -1,0 +1,85 @@
+
+body{
+  user-select: none;
+  background-color: #1E1E1E;
+}
+
+._col-1{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
+  -ms-flex: 0 0 4.166666%;
+  flex: 0 0 4.166666%;
+  max-width: 4.166666%;
+  overflow: hidden;
+}
+
+figure.software_container>img{
+  padding-right: 15px;
+  padding-left: 15px; 
+}
+
+
+.software_container{
+    width: 100%;
+    height: 99px;   
+    overflow: hidden;
+    cursor: default;
+    margin: 0px;
+    border-radius:1rem;
+
+    background-color: rgba(255, 255, 255, 0);
+
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+}
+.software_container>figcaption{
+  color: white;
+}
+.software_container[data-software_id]:hover{
+    background-color: rgba(255, 255, 255, 0.31);
+}
+
+
+#menu{
+  position: fixed;
+  width:150px;
+  top:0;
+  left:0;
+}
+
+#menu_overlay{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+#menu .btn{
+  /* background-color: rgb(245, 245, 245); */
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.42);
+  border-style: solid;
+}
+
+
+.open_animation{
+  animation-name: open_animation;
+  animation-direction: alternate;
+  animation-duration: .2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+@keyframes open_animation{
+  form{
+    background-color: rgba(183, 251, 255, 0);
+  }to {
+    background-color: rgba(183, 251, 255, 1);
+  }
+}
+
+

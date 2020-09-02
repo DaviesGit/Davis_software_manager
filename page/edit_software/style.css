@@ -1,0 +1,9 @@
+.dragging{
+    background-color: #6cbeff;
+}
+
+#drop_area .alert{
+    transition-property: background-color;
+    transition-duration:.3s;
+    transition-timing-function: ease-in-out;
+}

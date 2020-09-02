@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davis</title>
+    <link rel="stylesheet" href="./library/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-8">
+                <button id="button_edit_order" class="btn btn-primary" type="button">edit order</button>
+                <button id="button_" class="btn btn-disable" type="button">button</button>
+                <button id="button_" class="btn btn-disable" type="button">button</button>
+                <button id="button_" class="btn btn-disable" type="button">button</button>
+                <button id="button_" class="btn btn-disable" type="button">button</button>
+                <button id="button_" class="btn btn-disable" type="button">button</button>
+                <button id="button_" class="btn btn-disable" type="button">button</button>
+                <button id="button_" class="btn btn-disable" type="button">button</button>
+            </div>
+            <div class="col-4">
+                <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text">Search</span></div><input class="form-control" type="text">
+                    <div class="input-group-append"><button class="btn btn-primary" type="button">Go!</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mw-100 mt-3">
+        <div id="all_software" class="row">
+            <div class="_col-1">
+                <figure class="figure software_container">
+                    <img draggable="false" title="this is title" class="img-fluid figure-img w-100" src="./asset/chrome_IDR_MAINFRAME.ico">
+                    <figcaption title="this is title" class="figure-caption text-center">Caption</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div style="display:none;" id="menu_overlay">
+        <div id="menu">
+            <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+                <button id="menu_open" type="button" class="btn btn-light pl-0 pr-0 pt-1 pb-1">open</button>
+                <button id="menu_open_folder" type="button" class="btn btn-light pl-0 pr-0 pt-1 pb-1">open folder</button>
+                <button id="menu_setting" type="button" class="btn btn-light pl-0 pr-0 pt-1 pb-1">setting</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const render = require('./render.js');
+        render.render();
+    </script>
+</body>
+
+</html>

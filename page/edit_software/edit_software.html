@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit software</title>
+    <link rel="stylesheet" href="../../library/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col">
+                <form id="form_edit">
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">name</span></div><input id="name" placeholder="" class="form-control"
+                            type="text"></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">type</span></div><input id="type" placeholder="" class="form-control"
+                            type="text"></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">base_path</span></div><input id="base_path" placeholder="" class="form-control"
+                            type="text"></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">file_path</span></div><input id="file_path" placeholder="" class="form-control"
+                            type="text"></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">icon</span></div><input id="icon" placeholder="" class="form-control"
+                            type="text"></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">tag</span></div><textarea id="tag" placeholder="" class="form-control"></textarea></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">description</span></div><textarea id="description" placeholder=""
+                            class="form-control"></textarea></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">start_parameters</span></div><textarea id="start_parameters" placeholder=""
+                            class="form-control"></textarea></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">start_folder</span></div><input id="start_folder" placeholder="" class="form-control"
+                            type="text"></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">auto_start</span></div><input id="auto_start" placeholder="" class="form-control"
+                            type="checkbox"></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">before_run</span></div><textarea id="before_run" placeholder=""
+                            class="form-control"></textarea></div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-prepend"><span class="input-group-text">other_attribute</span></div><textarea id="other_attribute" placeholder=""
+                            class="form-control"></textarea></div>
+                </form>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col-5 offset-7">
+                <button id="button_cancel" class="btn btn-success" type="button">cancel</button>
+                <button id="button_delete" class="btn btn-danger" type="button">delete</button>
+                <button id="button_confirm" class="btn btn-primary" type="button">confirm</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const main = require('./main.js');
+        main.render();
+    </script>
+</body>
+
+</html>
